@@ -1,0 +1,73 @@
+/* Resetting default browser styling */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', cursive;
+  font-size: large;
+  background-image: url("background_img.jpg"); /* Corrected the spelling of "background" */
+  background-size: cover;
+}
+
+/* The .cover-image class seems to be misplaced inside the body and html selectors. It should be outside. */
+.cover-image {
+  width: 100%;
+  height: auto;
+}
+
+header {
+  background-color: #6f38bc;
+  text-align: center;
+  padding: 40px;
+  font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', cursive;
+  color: #fff;
+  background-image: url("cover_img.jpg"); /* Assuming this is a different image for the header */
+}
+
+/* Removed duplicated and misplaced .cover-image styles within header */
+
+main {
+  padding: 20px;
+}
+
+/* Enlarged and stylized title */
+h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 4em;
+  font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', cursive;
+  text-shadow: 2px 2px 4px #000;
+}
+
+h2 {
+  color: #6f38bc;
+  font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', cursive;
+  margin-bottom: 1rem;
+}
+
+/* Styling for the comic panels */
+.comic-panel {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.panel {
+  border: 3px solid #721c24;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Dialogue styling */
+.dialogue {
+  margin-top: 10px;
+  font-style: italic;
+  color: #333;
+  font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', cursive;
+  padding: 10px;
+  border-top: 2px solid #721c24;
+}
+.generated-image {
+  width:75%;
+  height: auto;
